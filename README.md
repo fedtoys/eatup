@@ -5,13 +5,13 @@ EATup
 
 The website for the Monthly FED EATup, where the Springer Nature front-end developers (and friends) eat lots and go for a few drinks.
 
-http://meatup.info/
+http://eatup.diet/
 
 
 Setup Guide
 -----------
 
-- Install [Ruby], [Bundler], and [Node.js]
+- Install [Ruby] and [Bundler]
 - Clone this repo
 - Run `bundle install`
 
@@ -32,5 +32,4 @@ Pushes to the `gh-pages` branch will go live immediately. Work on feature branch
 
 [bundler]: http://bundler.io/
 [jekyll]: http://jekyllrb.com/
-[node.js]: http://nodejs.org/
 [ruby]: https://www.ruby-lang.org/
