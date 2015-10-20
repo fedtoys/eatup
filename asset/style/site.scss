@@ -1,0 +1,88 @@
+---
+---
+
+// Vendor styles
+@import "vendor/normalize-3.0.2";
+
+// Layout
+
+body {
+    padding: 20px;
+    color: #333;
+}
+
+.page {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+
+// Typography
+
+h1, h2, h3, ol, p, ul {
+    margin: 0 0 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+del {
+    color: #ccc;
+    position: relative;
+    text-decoration: none;
+
+    &:before, &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: -10%;
+        left: -10%;
+        top: 42%;
+        bottom: 50%;
+        transform: rotate(30deg);
+        border-top: 3px solid #999;
+    }
+    &:after {
+        transform: rotate(-30deg);
+    }
+}
+
+
+// Lists
+
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    > li {
+        display: block;
+    }
+}
+
+.inline-list > li {
+    display: inline;
+}
+
+.button-list > li > a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #eee;
+}
+
+
+// Spacing
+
+.spaced {
+    margin-bottom: 20px;
+}
+.spaced-more {
+    margin-bottom: 40px;   
+}
+.spaced-less {
+    margin-bottom: 10px;
+}
+.unspaced {
+    margin-bottom: 0;
+}

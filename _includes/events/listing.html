@@ -1,7 +1,7 @@
 
 {% assign events = site.events | reverse %}
 
-<ol>
+<ol class="clean-list">
     {% for event in events %}
         <li>
             {% include events/event.html event=event %}
