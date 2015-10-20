@@ -1,0 +1,6 @@
+
+# The site language
+language: en-GB
+
+# The site hostname, used where a full URL is required
+hostname: eatup.diet

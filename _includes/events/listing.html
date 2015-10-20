@@ -1,0 +1,10 @@
+
+{% assign events = site.events | reverse %}
+
+<ol>
+    {% for event in events %}
+        <li>
+            {% include events/event.html event=event %}
+        </li>
+    {% endfor %}
+</ol>

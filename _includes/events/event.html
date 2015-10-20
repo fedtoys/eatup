@@ -1,0 +1,8 @@
+
+{% assign event=include.event %}
+
+<h2>
+    <a href="{{ event.url }}">{{ event.title }}</a>
+</h2>
+
+{% include events/event-info.html event=event %}

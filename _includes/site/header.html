@@ -1,0 +1,13 @@
+
+{% assign events = site.events | reverse %}
+
+<nav>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="{{ events[0].url }}">Next Event</a> 
+        </li>
+    </ul>
+</nav>

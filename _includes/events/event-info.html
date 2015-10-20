@@ -1,0 +1,25 @@
+
+{% assign event=include.event %}
+
+<p>
+
+    <time datetime="{{ event.date | date: '%F' }}">
+        <span>{{ event.date | date: '%d' }}</span>
+        <span>{{ event.date | date: '%b' }}</span>
+    </time>
+
+    @
+
+    <span>
+        {% if event.venue.url %}
+            {% if event.venue.url %}
+                <a href="{{ event.venue.url }}">{{ event.venue.name }}</a>
+            {% else %}
+                {{ event.venue.name }}
+            {% endif %}
+        {% else %}
+            ???
+        {% endif %}
+    </span>
+
+</p>

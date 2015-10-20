@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ site.data.meta.language }}">
+<head>
+    
+    <!-- Page meta information -->
+    <meta charset="utf-8"/>
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}"/>
+
+    <!-- Don't index anything -->
+    <meta name="robots" content="noindex"/>
+
+    <!-- Site links -->
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="Rowan Manning's Blog"/>
+    <link rel="canonical" href="http://{{ site.data.meta.hostname }}{{ page.url | replace: 'index.html', '' }}"/>
+
+    <!-- Styles -->
+    <meta name="viewport" content="width=device-width"/>
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="/asset/style/site.css"/><!--<![endif]-->
+    <link rel="icon" href="/favicon.png" type="image/png"/>
+    <link rel="shortcut icon" href="/favicon.ico"/>
+
+</head>
+<body>
+
+    <div class="page">
+
+        <div role="banner">
+            {% include site/header.html %}
+        </div>
+
+        <div role="main">
+            {{ content }}
+        </div>
+
+        <div role="contentinfo">
+            {% include site/footer.html %}
+        </div>
+
+    </div>
+
+</body>
+</html>

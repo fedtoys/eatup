@@ -1,0 +1,36 @@
+
+# Files and directories to exclude from compilation
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - Makefile
+  - README.md
+
+# Site collections
+collections:
+  events:
+    output: true
+    permalink: /events/:path/
+    layout: event
+
+# Default front-matter
+defaults:
+  - scope:
+      type: events
+    values:
+      layout: event
+
+# Don't produce an index for related posts
+lsi: false
+
+# Markdown parser
+markdown: kramdown
+
+# Sass compilation
+sass:
+  sass_dir: asset/style
+  style: :compressed
+
+# Timezone setting
+timezone: Europe/London
