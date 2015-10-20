@@ -19,12 +19,15 @@ body {
 
 // Typography
 
-h1, h2, h3, ol, p, ul {
+h1, h2, h3, hr, ol, p, ul {
     margin: 0 0 20px 0;
 }
 
 h1 {
     font-size: 24px;
+}
+h2 {
+    font-size: 20px;
 }
 
 del {
@@ -48,6 +51,18 @@ del {
     }
 }
 
+hr {
+    height: 0;
+    border: none;
+    border-top: 2px solid #eee;
+    color: #eee;
+}
+
+a {
+    color: #2277aa;
+    text-decoration: none;
+}
+
 
 // Lists
 
@@ -69,6 +84,7 @@ del {
     display: inline-block;
     padding: 5px 10px;
     background-color: #eee;
+    text-decoration: none;
 }
 
 
@@ -85,4 +101,20 @@ del {
 }
 .unspaced {
     margin-bottom: 0;
+}
+
+
+// Forms
+
+.cta-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #3399cc;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #2277aa;
+    }
 }
